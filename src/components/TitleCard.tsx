@@ -1,6 +1,11 @@
 import { useState, useEffect } from "react";
 
-const TitleCard = ({ loadedState }) => {
+type LoadedStateFunction = (loaded: boolean) => void;
+type TitleCardProps = {
+  loadedState: LoadedStateFunction;
+};
+
+const TitleCard = ({ loadedState }: TitleCardProps) => {
   const [loaded, setLoaded] = useState(false);
   const [tempArray, setTempArray] = useState([" ", " ", " ", " ", " ", " "]);
   const [iterator, setIterator] = useState(0);

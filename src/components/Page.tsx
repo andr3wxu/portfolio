@@ -6,7 +6,9 @@ import Links from "./Links";
 
 const Page = () => {
   const [loaded, setLoaded] = useState(false);
-  const handleLoaded = (isLoaded) => {
+  const handleLoaded = (
+    isLoaded: boolean | ((prevState: boolean) => boolean)
+  ) => {
     setLoaded(isLoaded);
   };
   return (

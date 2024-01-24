@@ -14,18 +14,22 @@ const Page = () => {
   return (
     <>
       <div
-        className={`transition transition-duration-2000 ${
-          loaded ? "opacity-100" : "opacity-0"
-        }`}
+        style={{
+          transitionDuration: "0.7s",
+          opacity: loaded ? "1" : "0",
+          transitionProperty: "opacity",
+        }}
       >
         <Logo />
       </div>
       <div className="z-10 relative">
         <div className="absolute">{loaded}</div>
         <div
-          className={`transition transition-duration-2000 ${
-            loaded ? "opacity-100" : "opacity-0"
-          }`}
+          style={{
+            transitionDuration: "0.7s",
+            opacity: loaded ? "1" : "0",
+            transitionProperty: "opacity",
+          }}
         >
           <Title />
           <section id="subtitle">

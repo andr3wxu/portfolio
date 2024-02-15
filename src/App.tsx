@@ -33,8 +33,8 @@ function App() {
             <Route path="projects" element={<Projects />} />
           </Routes>
         </BrowserRouter>
+        <Links />
       </div>
-      <Links />
     </>
   );
 }

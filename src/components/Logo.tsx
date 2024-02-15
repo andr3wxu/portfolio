@@ -6,7 +6,14 @@ const Logo = () => {
     >
       <img
         src="../../fav.png"
-        className="w-20 absolute top-5 left-5 opacity-100 hover:cursor-pointer"
+        className="absolute hover:cursor-pointer"
+        style={{
+          top: "6em",
+          left: "13em",
+          width: "40em",
+          zIndex: "-10",
+          opacity: "4%",
+        }}
       />
     </a>
   );

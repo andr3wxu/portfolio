@@ -56,7 +56,7 @@ const TitleCard = ({ loadedState }: TitleCardProps) => {
         }`}
       />
       <div
-        className={`absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-7xl font-bold text-blue-600 ${
+        className={`absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-7xl font-extrabold text-blue-600 ${
           loaded ? "opacity-0 transition transition-duration-2000" : ""
         }`}
       >

@@ -9,7 +9,7 @@ const Logo = () => {
         className="absolute hover:cursor-pointer"
         style={{
           top: "6em",
-          left: "13em",
+          left: "13.5vw",
           width: "40em",
           zIndex: "-10",
           opacity: "4%",

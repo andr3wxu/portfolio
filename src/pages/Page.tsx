@@ -4,7 +4,10 @@ import Logo from "../components/Logo";
 
 const Page = () => {
   return (
-    <div className="w-full mt-60" style={{ marginLeft: "24em" }}>
+    <div
+      className="w-full mt-60"
+      style={{ marginLeft: "26vw", paddingRight: "20vw" }}
+    >
       <Logo />
       <div
         id="body"
@@ -12,7 +15,11 @@ const Page = () => {
         style={{ zIndex: "10" }}
       >
         <Title />
-        <section id="subtitle" className="text-lg text-slate-500 mt-1">
+        <section
+          id="subtitle"
+          className="text-lg text-slate-500 mt-1"
+          style={{ width: "43vw" }}
+        >
           i'm a software engineering student{" "}
           <a
             href="https://uwaterloo.ca/"

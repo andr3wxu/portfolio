@@ -5,7 +5,7 @@ const Subtitle = () => {
     <section
       id="about"
       className="mt-8 text-slate-400"
-      style={{ fontSize: "14.2px", maxWidth: "42em" }}
+      style={{ fontSize: "14.2px", maxWidth: "42vw" }}
     >
       <p className="mb-5">
         I mainly work with{" "}

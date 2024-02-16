@@ -24,7 +24,7 @@ const Page = () => {
           <a
             href="https://uwaterloo.ca/"
             target="_blank"
-            className="p font-semibold text-blue-600 hover:bg-blue-600 hover:text-white"
+            className="font-semibold text-blue-600 hover:bg-blue-600 hover:text-white"
           >
             [@uwaterloo]
           </a>

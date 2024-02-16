@@ -19,7 +19,7 @@ const Links = () => {
     },
   ];
   return (
-    <ul className="p-1 flex flex-row justify-center absolute bottom-0 left-1/2 transform -translate-x-1/2 w-screen bg-blue-600">
+    <ul className="p-1 flex flex-row justify-center fixed bottom-0 left-1/2 transform -translate-x-1/2 w-screen bg-blue-600">
       {links.map(({ name, link, icon: Icon }) => {
         return (
           <li key={name}>

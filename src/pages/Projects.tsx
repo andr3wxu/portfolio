@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 
 export type Project = {
   title: string;
+  subtitle: string | null;
   imgpath: string;
   description: string;
   github: string | null;
@@ -14,6 +15,7 @@ export type Project = {
 const projectArray: Project[] = [
   {
     title: "Webnote",
+    subtitle: "Web Extension",
     imgpath: "bleh",
     description: "wefef",
     github: "http://github.com",
@@ -22,6 +24,7 @@ const projectArray: Project[] = [
   },
   {
     title: "Uniforum",
+    subtitle: "Discussion Forum",
     imgpath: "bleh",
     description: "wefef",
     github: "http://github.com",
@@ -30,6 +33,7 @@ const projectArray: Project[] = [
   },
   {
     title: "Emoticon",
+    subtitle: "Neural Network",
     imgpath: "bleh",
     description: "wefef",
     github: "http://github.com",
@@ -38,6 +42,7 @@ const projectArray: Project[] = [
   },
   {
     title: "temperature alarm",
+    subtitle: null,
     imgpath: "bleh",
     description: "wefef",
     github: "http://github.com",
@@ -46,6 +51,7 @@ const projectArray: Project[] = [
   },
   {
     title: "CSSC Website",
+    subtitle: null,
     imgpath: "bleh",
     description: "wefef",
     github: "http://github.com",
@@ -54,6 +60,7 @@ const projectArray: Project[] = [
   },
   {
     title: "This site :)",
+    subtitle: null,
     imgpath: "bleh",
     description: "wefef",
     github: "http://github.com",
@@ -62,6 +69,7 @@ const projectArray: Project[] = [
   },
   {
     title: "roboflow sticker",
+    subtitle: null,
     imgpath: "bleh",
     description: "wefef",
     github: "http://github.com",
@@ -74,24 +82,45 @@ const Projects = () => {
   return (
     <div
       className="w-screen h-screen flex flex-col items-center"
-      style={{ marginTop: "15vh" }}
+      style={{ marginTop: "10vh" }}
     >
-      <h1 className="font-extrabold text-blue-600 text-6xl">Projects</h1>
-      <div className="flex flex-row mt-2">
-        <p className="mr-2 text-slate-600">Stay a while...or </p>
-        <Link
-          to="/"
-          className="font-semibold text-blue-600 hover:bg-blue-600 hover:text-white"
+      <section id="title" className="mb-16">
+        <h2
+          className="text-slate-400 font-semibold"
+          style={{
+            fontSize: "3.2vw",
+            marginBottom: "-0.4em",
+          }}
         >
-          [Go back]
-        </Link>
-      </div>
-      <p className="mt-6 text-slate-400">
-        (work in progress, if you can't tell)
-      </p>
+          my
+        </h2>
+        <h1
+          className="font-extrabold text-blue-600"
+          style={{ fontSize: "5.5vw", marginLeft: "-0.2vw" }}
+        >
+          projects
+        </h1>
+        <section
+          className="text-slate-400 flex flex-col text-right mt-3 w-full"
+          style={{ fontSize: "0.9em", width: "30vw" }}
+        >
+          <p className="text-lg text-slate-500 mt-1">
+            Some stuff I've worked on recently.
+          </p>
+          <p className="mr-1">
+            Stay a while...or{" "}
+            <Link
+              to="/"
+              className="font-semibold text-blue-600 hover:bg-blue-600 hover:text-white"
+            >
+              [Go back]
+            </Link>
+          </p>
+        </section>
+      </section>
       <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr" }}>
-        {projectArray.map((project) => (
-          <ProjectCard key={project.title} project={project} />
+        {projectArray.map((project, index) => (
+          <ProjectCard key={project.title} project={project} index={index} />
         ))}
       </div>
     </div>

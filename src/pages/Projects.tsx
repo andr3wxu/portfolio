@@ -17,64 +17,67 @@ const projectArray: Project[] = [
     title: "Webnote",
     subtitle: "Web Extension",
     imgpath: "bleh",
-    description: "wefef",
-    github: "http://github.com",
+    description:
+      "which allows users to record notes directly within their web browser.",
+    github: "https://github.com/andr3wxu/webnote-client",
     link: null,
-    techstack: ["Node"],
+    techstack: ["React", "Django", "PostgreSQL"],
   },
   {
     title: "Uniforum",
     subtitle: "Discussion Forum",
     imgpath: "bleh",
-    description: "wefef",
-    github: "http://github.com",
-    link: null,
-    techstack: ["Node"],
+    description:
+      "which displays posts, comments, and upvotes by unique profiles.",
+    github: "https://github.com/andr3wxu/uniforum-client",
+    link: "http://uniforum-client.s3-website-us-east-1.amazonaws.com/",
+    techstack: ["React", "Node.js", "Express", "MySQL"],
   },
   {
     title: "Emoticon",
     subtitle: "Neural Network",
     imgpath: "bleh",
-    description: "wefef",
-    github: "http://github.com",
-    link: null,
-    techstack: ["Node"],
+    description: "which detects the sentiment of hand-drawn emoticons.",
+    github: "https://https://github.com/andr3wxu/emoticon",
+    link: "http://emoticon.s3-website-us-east-1.amazonaws.com/",
+    techstack: ["React", "Node.js", "OpenCV", "NumPy"],
   },
   {
-    title: "temperature alarm",
-    subtitle: null,
+    title: "Temperature Sensor",
+    subtitle: "STM32 Dev. Board",
     imgpath: "bleh",
-    description: "wefef",
-    github: "http://github.com",
+    description: "which signals users of irreguralities in temperature.",
+    github: "https://github.com/andr3wxu/ECE198",
     link: null,
-    techstack: ["Node"],
+    techstack: ["C", "STM32"],
   },
   {
     title: "CSSC Website",
-    subtitle: null,
+    subtitle: "Webpage",
     imgpath: "bleh",
-    description: "wefef",
-    github: "http://github.com",
+    description: "for the Calgary Science Spelling Challenge non-profit.",
+    github: "https://github.com/andr3wxu/CSSC",
+    link: "https://csschallenge.ca",
+    techstack: ["React", "Typescript"],
+  },
+  {
+    title: "Sticker Detector",
+    subtitle: "Neural Network",
+    imgpath: "bleh",
+    description:
+      "running on the YoloV8 model to detect faulty sticker placements.",
+    github: null,
     link: null,
-    techstack: ["Node"],
+    techstack: ["OpenCV", "NumPy", "Matplotlib"],
   },
   {
     title: "This site :)",
     subtitle: null,
     imgpath: "bleh",
-    description: "wefef",
-    github: "http://github.com",
+    description: "",
+    github: "http://github.com/andr3wxu/portfolio",
     link: null,
-    techstack: ["Node"],
-  },
-  {
-    title: "roboflow sticker",
-    subtitle: null,
-    imgpath: "bleh",
-    description: "wefef",
-    github: "http://github.com",
-    link: null,
-    techstack: ["Node"],
+    techstack: ["React", "Typescript"],
   },
 ];
 
@@ -82,7 +85,7 @@ const Projects = () => {
   return (
     <div
       className="w-screen h-screen flex flex-col items-center"
-      style={{ marginTop: "10vh" }}
+      style={{ marginTop: "14vh" }}
     >
       <section id="title" className="mb-16">
         <h2

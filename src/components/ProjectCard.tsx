@@ -42,7 +42,7 @@ const ProjectCard = ({ project, index }: Props) => {
           id="links"
           style={{ position: "absolute", bottom: "3vw", fontSize: "0.8vw" }}
         >
-          {project.github ? (
+          {project.github && (
             <a
               href={project.github}
               target="_blank"
@@ -50,10 +50,8 @@ const ProjectCard = ({ project, index }: Props) => {
             >
               [Github]
             </a>
-          ) : (
-            <></>
           )}
-          {project.link ? (
+          {project.link && (
             <a
               href={project.link}
               target="_blank"
@@ -61,8 +59,6 @@ const ProjectCard = ({ project, index }: Props) => {
             >
               [Link]
             </a>
-          ) : (
-            <></>
           )}
         </section>
       </div>

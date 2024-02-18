@@ -31,6 +31,13 @@ const Subtitle = () => {
       >
         [Projects]
       </Link>
+      <a
+        href="../../resume.pdf"
+        target="_blank"
+        className="ml-8 font-semibold text-blue-600 hover:bg-blue-600 hover:text-white"
+      >
+        [Resume]
+      </a>
     </section>
   );
 };

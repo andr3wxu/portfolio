@@ -1,18 +1,27 @@
 import { useState } from "react";
 
-const MouseTrail = () => {
-  const [trail, setTrail] = useState<{ x: number; y: number }[]>([]);
+const CursorFollower = () => {
+  const [position, setPosition] = useState<{ x: number; y: number }>({
+    x: 0,
+    y: 0,
+  });
+
+  const [isVisible, setIsVisible] = useState(true);
 
   const onMouseMove = (event: { clientX: any; clientY: any }) => {
     const { clientX, clientY } = event;
-    console.log("Mouse Moved:", clientX, clientY);
-    setTrail((prevTrail) => [...prevTrail, { x: clientX, y: clientY }]);
+    setPosition({ x: clientX, y: clientY });
+    setIsVisible(true);
+  };
+
+  const onMouseLeave = () => {
+    setIsVisible(false); // Hide on mouse leave
   };
 
   return (
     <div
       style={{
-        zIndex: "100",
+        zIndex: "-10",
         position: "fixed",
         top: 0,
         left: 0,
@@ -20,24 +29,24 @@ const MouseTrail = () => {
         height: "100%",
       }}
       onMouseMove={onMouseMove}
+      onMouseLeave={onMouseLeave}
     >
-      {trail.map((position, index) => (
+      {isVisible && (
         <div
-          key={index}
           style={{
             position: "absolute",
             left: position.x,
             top: position.y,
-            width: "10px", // Larger Size
-            height: "10px", // Larger Size
-            backgroundColor: "red", // Obvious color
-            border: "none", // Remove the border temporarily
-            opacity: 1 - index / 50,
+            width: "10px",
+            height: "10px",
+            backgroundColor: "red",
+            border: "none",
+            pointerEvents: "none",
           }}
         ></div>
-      ))}
+      )}
     </div>
   );
 };
 
-export default MouseTrail;
+export default CursorFollower;

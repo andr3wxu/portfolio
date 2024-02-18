@@ -38,7 +38,7 @@ const projectArray: Project[] = [
     subtitle: "Neural Network",
     imgpath: "bleh",
     description: "which detects the sentiment of hand-drawn emoticons.",
-    github: "https://https://github.com/andr3wxu/emoticon",
+    github: "https://github.com/andr3wxu/emoticon",
     link: "http://emoticon.s3-website-us-east-1.amazonaws.com/",
     techstack: ["React", "Node.js", "OpenCV", "NumPy"],
   },

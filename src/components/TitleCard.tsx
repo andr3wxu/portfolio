@@ -11,7 +11,7 @@ const TitleCard = ({ loadedState }: Props) => {
   });
   return (
     <>
-      <div>{loadedState.name}</div>
+      <div className={"font-bold"}>{loadedState.name}</div>
     </>
   );
 };

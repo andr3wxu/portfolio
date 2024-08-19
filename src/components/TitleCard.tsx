@@ -12,7 +12,7 @@ const TitleCard = ({ loadedState }: Props) => {
   const [tempArray, setTempArray] = useState(["*", " ", "*", " ", "*", " "]);
 
   const genChar = () => {
-    const charset = "abcdefghijklmnopqrstuvwxyz1234567890";
+    const charset = "abcdefhiklmnrstuvwxz237890!#$%*";
     const random = Math.floor(Math.random() * charset.length);
     return charset.charAt(random);
   };
@@ -46,7 +46,9 @@ const TitleCard = ({ loadedState }: Props) => {
 
   return (
     <>
-      <div>
+      <div
+        className={`${loaded ? "animate-frameMotion" : "fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"} font-extrabold text-6xl p-2.5 pb-3 text-white animate-frameColour bg-theme-blue`}
+      >
         {tempArray.map((letter, index) => {
           return index == 3 ? (
             <span key={index}>

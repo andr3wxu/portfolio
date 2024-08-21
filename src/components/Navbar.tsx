@@ -20,7 +20,7 @@ const Navbar = () => {
 
   const links = [
     { name: "Home", link: "", path: "" },
-    { name: ":)", link: "404", path: "404" },
+    { name: "Fun:)", link: "404", path: "404" },
   ];
   const location = useLocation();
 
@@ -54,12 +54,12 @@ const Navbar = () => {
 
   return (
     <>
-      <div
+      <section
         className={`fixed top-0 left-0 w-full flex border-b border-theme-blue bg-theme-off-white/30 justify-between dark:bg-theme-blue/30 dark:border-theme-off-white backdrop-blur-2xl transition duration-200`}
       >
         <div
           className={
-            "font-extrabold text-xl p-2 hover:text-theme-off-white hover:bg-theme-blue leading-5 bg-theme-off-white border-r border-theme-blue dark:border-theme-off-white dark:bg-theme-blue dark:hover:text-theme-blue dark:hover:bg-theme-off-white transition duration-200"
+            "font-extrabold text-xl p-2.5 hover:text-theme-off-white hover:bg-theme-blue leading-5 bg-theme-off-white border-r border-theme-blue dark:border-theme-off-white dark:bg-theme-blue dark:hover:text-theme-blue dark:hover:bg-theme-off-white transition duration-200"
           }
         >
           <Link to={""}>
@@ -67,7 +67,7 @@ const Navbar = () => {
             <p>r3w</p>
           </Link>
         </div>
-        <div className={`flex flex-row`}>
+        <section className={`flex flex-row`}>
           <div className={`flex flex-row items-center justify-between`}>
             {" "}
             {links.map(({ name, link, path }) => {
@@ -83,13 +83,14 @@ const Navbar = () => {
               );
             })}
           </div>
-          <div className={`border-l border-theme-blue ml-2`}>
-            <button onClick={toggleTheme} className={`bg-theme-blue`}>
-              hi
-            </button>
+          <div
+            onClick={toggleTheme}
+            className={`font-bold text-xl border-l border-theme-blue dark:border-theme-off-white ml-2 flex items-center bg-transparent pl-5 pr-5 rounded-none hover:bg-theme-blue hover:text-theme-off-white dark:hover:bg-theme-off-white dark:hover:text-theme-blue hover:cursor-pointer transition`}
+          >
+            {theme === "dark" ? "日" : "月"}
           </div>
-        </div>
-      </div>
+        </section>
+      </section>
     </>
   );
 };

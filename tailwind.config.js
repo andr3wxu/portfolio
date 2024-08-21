@@ -1,11 +1,13 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  darkMode: "class",
   theme: {
     extend: {
       colors: {
-        "theme-off-white": "rgba(255, 255, 255, 0.87)",
+        "theme-off-white": "#EEF0F3",
         "theme-blue": "#203A9C",
+        "theme-white": "#FFFFFF",
       },
       keyframes: {
         frameColour: {
@@ -27,7 +29,7 @@ export default {
             position: "fixed",
             top: "0",
             left: "0",
-            fontSize: "1.5em",
+            fontSize: "1rem",
           },
         },
       },

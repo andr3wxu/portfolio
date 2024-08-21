@@ -21,8 +21,8 @@ function App() {
   return (
     <>
       <TitleCard loadedState={handleLoaded} />
-      <Navbar />
       <BrowserRouter basename={"/"}>
+        <Navbar />
         <Routes>
           <Route path={""} element={<Home />} />
         </Routes>

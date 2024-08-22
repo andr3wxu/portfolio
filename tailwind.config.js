@@ -48,6 +48,23 @@ export default {
         frameMotion: "frameMotion 0.7s ease-in-out forwards",
         NavbarMotion: "NavbarMotion 0.7s ease-in-out forwards",
       },
+      fontFamily: {
+        mono: ['"Martian Mono", monospace'],
+        slab: ['"Montagu Slab", serif'],
+        "roboto-flex": [
+          '"Roboto Flex", sans-serif',
+          { fontVariationSettings: '"wdth" 161, "wght" 900' },
+        ],
+        "roboto-flex-bold": [
+          '"Roboto Flex", sans-serif',
+          { fontVariationSettings: '"wdth" 120, "wght" 900' },
+        ],
+      },
+    },
+  },
+  variants: {
+    extend: {
+      fontWeight: ["responsive", "hover", "focus"],
     },
   },
   plugins: [],

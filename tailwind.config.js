@@ -51,7 +51,12 @@ export default {
       fontFamily: {
         mono: ['"Martian Mono", monospace'],
         slab: ['"Montagu Slab", serif'],
+        sans: ['"Manrope", sans-serif'],
         "roboto-flex": [
+          '"Roboto Flex", sans-serif',
+          { fontVariationSettings: '"wdth" 100, "wght" 400' },
+        ],
+        "roboto-flex-wide": [
           '"Roboto Flex", sans-serif',
           { fontVariationSettings: '"wdth" 161, "wght" 900' },
         ],
@@ -59,6 +64,14 @@ export default {
           '"Roboto Flex", sans-serif',
           { fontVariationSettings: '"wdth" 120, "wght" 900' },
         ],
+      },
+      fontSize: {
+        "custom-h1": "17vw",
+        "custom-h2": "10vw",
+        "custom-h3": "3vw",
+      },
+      margin: {
+        "custom-title-top": "6vw",
       },
     },
   },

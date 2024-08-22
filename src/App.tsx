@@ -22,7 +22,7 @@ function App() {
     <>
       <TitleCard loadedState={handleLoaded} />
       <BrowserRouter basename={"/"}>
-        <Navbar />
+        <Navbar loadedState={loaded} />
         <Routes>
           <Route path={""} element={<Home />} />
         </Routes>

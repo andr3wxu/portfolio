@@ -32,10 +32,21 @@ export default {
             fontSize: "1rem",
           },
         },
+        NavbarMotion: {
+          "0%": {
+            position: "fixed",
+            top: "-10%",
+          },
+          "100%": {
+            position: "fixed",
+            top: "0",
+          },
+        },
       },
       animation: {
         frameColour: "frameColour 3s ease-out forwards",
         frameMotion: "frameMotion 0.7s ease-in-out forwards",
+        NavbarMotion: "NavbarMotion 0.7s ease-in-out forwards",
       },
     },
   },

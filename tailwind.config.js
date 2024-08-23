@@ -32,11 +32,66 @@ export default {
             fontSize: "1rem",
           },
         },
+        NavbarMotion: {
+          "0%": {
+            position: "fixed",
+            top: "-10%",
+          },
+          "100%": {
+            position: "fixed",
+            top: "0",
+          },
+        },
+        LinksMotion: {
+          "0%": {
+            position: "fixed",
+            bottom: "-10%",
+          },
+          "100%": {
+            position: "fixed",
+            bottom: "0",
+          },
+        },
+        HelloMotion: {},
       },
       animation: {
         frameColour: "frameColour 3s ease-out forwards",
         frameMotion: "frameMotion 0.7s ease-in-out forwards",
+        NavbarMotion: "NavbarMotion 0.7s ease-in-out forwards",
+        LinksMotion: "LinksMotion 0.7s ease-in-out forwards",
       },
+      fontFamily: {
+        mono: ['"Martian Mono", monospace'],
+        slab: ['"Montagu Slab", serif'],
+        sans: ['"Manrope", sans-serif'],
+        "roboto-flex": [
+          '"Roboto Flex", sans-serif',
+          { fontVariationSettings: '"wdth" 100, "wght" 400' },
+        ],
+        "roboto-flex-wide": [
+          '"Roboto Flex", sans-serif',
+          { fontVariationSettings: '"wdth" 161, "wght" 900' },
+        ],
+        "roboto-flex-bold": [
+          '"Roboto Flex", sans-serif',
+          { fontVariationSettings: '"wdth" 120, "wght" 900' },
+        ],
+      },
+      fontSize: {
+        "custom-h1": "17vw",
+        "custom-h2": "10vw",
+        "custom-h3": "3vw",
+        "custom-a": "1.2em",
+      },
+      margin: {
+        "custom-title-top": "6vw",
+        "custom-p-top": "4vw",
+      },
+    },
+  },
+  variants: {
+    extend: {
+      fontWeight: ["responsive", "hover", "focus"],
     },
   },
   plugins: [],

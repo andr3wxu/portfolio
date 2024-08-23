@@ -42,11 +42,23 @@ export default {
             top: "0",
           },
         },
+        LinksMotion: {
+          "0%": {
+            position: "fixed",
+            bottom: "-10%",
+          },
+          "100%": {
+            position: "fixed",
+            bottom: "0",
+          },
+        },
+        HelloMotion: {},
       },
       animation: {
         frameColour: "frameColour 3s ease-out forwards",
         frameMotion: "frameMotion 0.7s ease-in-out forwards",
         NavbarMotion: "NavbarMotion 0.7s ease-in-out forwards",
+        LinksMotion: "LinksMotion 0.7s ease-in-out forwards",
       },
       fontFamily: {
         mono: ['"Martian Mono", monospace'],

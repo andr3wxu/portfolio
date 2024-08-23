@@ -5,6 +5,7 @@ import "./App.css";
 import Home from "./pages/Home.tsx";
 import TitleCard from "./components/TitleCard.tsx";
 import Navbar from "./components/Navbar.tsx";
+import Links from "./components/Links.tsx";
 
 function App() {
   const [loaded, setLoaded] = useState(false);
@@ -27,6 +28,7 @@ function App() {
           <Route path={""} element={<Home />} />
         </Routes>
       </BrowserRouter>
+      <Links />
     </>
   );
 }

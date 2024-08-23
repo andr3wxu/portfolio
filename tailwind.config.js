@@ -69,9 +69,11 @@ export default {
         "custom-h1": "17vw",
         "custom-h2": "10vw",
         "custom-h3": "3vw",
+        "custom-a": "1.2em",
       },
       margin: {
         "custom-title-top": "6vw",
+        "custom-p-top": "4vw",
       },
     },
   },

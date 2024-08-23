@@ -1,3 +1,5 @@
+import Subtitle from "../components/Subtitle";
+
 const Home = () => {
   return (
     <div>
@@ -29,9 +31,7 @@ const Home = () => {
             <span className={`font-mono font-light`}>]</span>
           </a>
         </h3>
-        <h4 className={`font-slab font-bold mt-custom-title-top`}>
-          Welcome to my portfolio!
-        </h4>
+        <Subtitle />
       </section>
     </div>
   );

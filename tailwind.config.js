@@ -52,13 +52,30 @@ export default {
             bottom: "0",
           },
         },
-        HelloMotion: {},
+        TitleMotion: {
+          "0%, 50%": {
+            opacity: "0",
+          },
+          "100%": {
+            opacity: "1",
+          },
+        },
+        SubtitleMotion: {
+          "0%, 70%": {
+            opacity: "0",
+          },
+          "100%": {
+            opacity: "1",
+          },
+        },
       },
       animation: {
         frameColour: "frameColour 3s ease-out forwards",
         frameMotion: "frameMotion 0.7s ease-in-out forwards",
         NavbarMotion: "NavbarMotion 0.7s ease-in-out forwards",
         LinksMotion: "LinksMotion 0.7s ease-in-out forwards",
+        TitleMotion: "TitleMotion 1.3s ease-in-out forwards",
+        SubtitleMotion: "SubtitleMotion 1.6s ease-in-out forwards",
       },
       fontFamily: {
         mono: ['"Martian Mono", monospace'],

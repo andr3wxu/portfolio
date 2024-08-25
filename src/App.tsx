@@ -7,6 +7,7 @@ import TitleCard from "./components/TitleCard.tsx";
 import Navbar from "./components/Navbar.tsx";
 import Links from "./components/Links.tsx";
 import NotFound from "./pages/NotFound.tsx";
+import Background from "./components/Background.tsx";
 
 function App() {
   const [loaded, setLoaded] = useState(false);
@@ -23,10 +24,11 @@ function App() {
   return (
     <>
       <TitleCard loadedState={handleLoaded} />
+      <Background loadedState={loaded} />
       <BrowserRouter basename={"/"}>
         <Navbar loadedState={loaded} />
         <Routes>
-          <Route path={""} element={<Home />} />
+          <Route path={""} element={<Home loadedState={loaded} />} />
           <Route path={"*"} element={<NotFound />} />
         </Routes>
       </BrowserRouter>

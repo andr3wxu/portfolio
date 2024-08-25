@@ -47,11 +47,11 @@ const Navbar = ({ loadedState }: Props) => {
   return (
     <>
       <section
-        className={`${loaded ? "animate-NavbarMotion" : ""} fixed -top-20 left-0 w-full flex border-b border-theme-blue bg-theme-off-white/30 justify-between dark:bg-theme-blue/30 dark:border-theme-off-white backdrop-blur-2xl transition duration-200`}
+        className={`z-10 ${loaded ? "animate-NavbarMotion" : ""} fixed -top-20 left-0 w-full flex border-b border-theme-blue bg-theme-off-white/30 justify-between dark:bg-theme-blue/30 dark:border-theme-off-white backdrop-blur-2xl transition duration-200`}
       >
         <div
           className={
-            "font-extrabold text-xl p-2.5 hover:text-theme-off-white hover:bg-theme-blue leading-5 bg-theme-off-white border-r border-theme-blue dark:border-theme-off-white dark:bg-theme-blue dark:hover:text-theme-blue dark:hover:bg-theme-off-white transition duration-200"
+            "font-extrabold text-xl p-2.5 hover:text-theme-off-white hover:bg-theme-blue leading-5 bg-theme-off-white border-r border-theme-blue dark:border-theme-off-white dark:bg-theme-blue dark:hover:text-theme-blue dark:hover:bg-theme-off-white transition duration-200 select-none"
           }
         >
           <Link to={""}>
@@ -77,7 +77,7 @@ const Navbar = ({ loadedState }: Props) => {
           </div>
           <div
             onClick={toggleTheme}
-            className={`font-bold text-xl border-l border-theme-blue dark:border-theme-off-white ml-2 flex items-center bg-transparent pl-5 pr-5 rounded-none hover:bg-theme-blue hover:text-theme-off-white dark:hover:bg-theme-off-white dark:hover:text-theme-blue hover:cursor-pointer transition`}
+            className={`font-bold text-xl border-l border-theme-blue dark:border-theme-off-white ml-2 flex items-center bg-transparent pl-5 pr-5 rounded-none hover:bg-theme-blue hover:text-theme-off-white dark:hover:bg-theme-off-white dark:hover:text-theme-blue hover:cursor-pointer transition select-none`}
           >
             {theme === "dark" ? "日" : "月"}
           </div>

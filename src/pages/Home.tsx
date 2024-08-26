@@ -18,7 +18,7 @@ const Home = ({ loadedState }: Props) => {
   return (
     <div className={`z-0`}>
       <section
-        className={`${loaded ? "animate-TitleMotion" : "opacity-0"} flex flex-col w-full text-6xl font-extrabold pt-12`}
+        className={`${loaded ? "animate-TitleMotion" : "opacity-0"} flex flex-col w-full text-6xl font-extrabold pt-12 mt-custom-title-top`}
       >
         <h2 className={`opacity-40`}>
           <span className={`font-roboto-flex-wide`}>HELLO,</span>

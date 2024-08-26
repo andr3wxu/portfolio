@@ -22,7 +22,11 @@
 html {
   scroll-behavior: smooth;
   background-color: #EEF0F3;
-  color: #203A9C
+  color: #203A9C;
+    max-width: 100vw;
+    max-height: 100vh;
+    overflow-x: clip;
+    overflow-y: hidden;
 }
 
 html.dark {

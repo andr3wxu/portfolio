@@ -33,7 +33,7 @@ const Links = ({ loadedState }: Props) => {
   ];
   return (
     <ul
-      className={`${loaded ? "animate-LinksMotion" : ""} p-4 flex flex-row justify-center fixed -bottom-10 left-1/2 transform -translate-x-1/2 w-screen`}
+      className={`${loaded ? "animate-LinksMotion" : ""} p-4 flex flex-row justify-center fixed -bottom-10 left-1/2 transform -translate-x-1/2 w-screen bg-theme-off-white/20 dark:bg-theme-blue/60 backdrop-blur-md`}
     >
       {links.map(({ name, link, icon: Icon }) => {
         return (

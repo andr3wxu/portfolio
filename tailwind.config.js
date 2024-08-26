@@ -52,13 +52,39 @@ export default {
             bottom: "0",
           },
         },
-        HelloMotion: {},
+        TitleMotion: {
+          "0%, 70%": {
+            opacity: "0",
+          },
+          "100%": {
+            opacity: "1",
+          },
+        },
+        SubtitleMotion: {
+          "0%, 90%": {
+            opacity: "0",
+          },
+          "100%": {
+            opacity: "1",
+          },
+        },
+        BackgroundMotion: {
+          "0%, 50%": {
+            opacity: "0",
+          },
+          "80%": {
+            opacity: "1",
+          },
+        },
       },
       animation: {
         frameColour: "frameColour 3s ease-out forwards",
         frameMotion: "frameMotion 0.7s ease-in-out forwards",
         NavbarMotion: "NavbarMotion 0.7s ease-in-out forwards",
         LinksMotion: "LinksMotion 0.7s ease-in-out forwards",
+        TitleMotion: "TitleMotion 1.3s ease-in-out forwards",
+        SubtitleMotion: "SubtitleMotion 1.6s ease-in-out forwards",
+        BackgroundMotion: "BackgroundMotion 1.3s ease-in-out forwards",
       },
       fontFamily: {
         mono: ['"Martian Mono", monospace'],
@@ -86,6 +112,21 @@ export default {
       margin: {
         "custom-title-top": "6vw",
         "custom-p-top": "4vw",
+      },
+      backgroundImage: {
+        "bg-light": "url('/bg-light.png')",
+        "bg-dark": "url('/bg-dark.png')",
+        noise:
+          "url('https://cdn.prod.website-files.com/6674f0cdb5b7b401612cf015/6674f0cdb5b7b401612cf065_noise-50.avif')",
+      },
+      borderWidth: {
+        16: "16px",
+      },
+      width: {
+        100: "30rem",
+      },
+      height: {
+        100: "30rem",
       },
     },
   },

@@ -1,6 +1,5 @@
 import Subtitle from "../components/Subtitle";
 import { useEffect, useState } from "react";
-import Background from "../components/Background.tsx";
 
 interface Props {
   loadedState: boolean;

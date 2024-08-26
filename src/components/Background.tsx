@@ -40,7 +40,7 @@ const Background = ({ loadedState }: Props) => {
     <>
       <div
         style={{ position: "absolute", height: "100vh", width: "100vw" }}
-        className={`${loaded ? "animate-BackgroundMotion" : "opacity-0"} -z-10 text-7xl backdrop-blur-2xl bg-theme-off-white/20 dark:bg-theme-blue/20 dark:backdrop-blur-3xl`}
+        className={`${loaded ? "animate-BackgroundCoverMotion" : "opacity-0"} -z-10 text-7xl backdrop-blur-2xl bg-theme-off-white/20 dark:bg-theme-blue/20 dark:backdrop-blur-3xl`}
       ></div>
       <div
         style={{

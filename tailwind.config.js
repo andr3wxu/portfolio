@@ -76,6 +76,14 @@ export default {
             opacity: "1",
           },
         },
+        BackgroundCoverMotion: {
+          "0%": {
+            opacity: "0",
+          },
+          "50%": {
+            opacity: "1",
+          },
+        },
       },
       animation: {
         frameColour: "frameColour 3s ease-out forwards",
@@ -85,6 +93,8 @@ export default {
         TitleMotion: "TitleMotion 1.3s ease-in-out forwards",
         SubtitleMotion: "SubtitleMotion 1.6s ease-in-out forwards",
         BackgroundMotion: "BackgroundMotion 1.3s ease-in-out forwards",
+        BackgroundCoverMotion:
+          "BackgroundCoverMotion 1.3s ease-in-out forwards",
       },
       fontFamily: {
         mono: ['"Martian Mono", monospace'],

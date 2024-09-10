@@ -38,7 +38,7 @@ const Subtitle = ({ loadedState }: Props) => {
         </a>{" "}
         or my{" "}
         <a
-          href={"./resume-andrew.pdf"}
+          href={"./Andrew Xu W25 Resume.pdf"}
           target="_blank"
           className={`font-slab text-custom-a font-semibold hover:bg-theme-blue hover:text-theme-off-white dark:hover:bg-theme-off-white dark:hover:text-theme-blue transition duration-200`}
         >

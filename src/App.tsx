@@ -19,6 +19,7 @@ function App() {
   // Prevent scrolling while animation is loading.
   useEffect(() => {
     document.body.style.overflow = "hidden";
+    localStorage.setItem("theme", "dark"); // Set default theme to dark
   }, []);
 
   return (

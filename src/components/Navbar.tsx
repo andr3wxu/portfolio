@@ -66,7 +66,7 @@ const Navbar = ({ loadedState }: Props) => {
               return (
                 <div
                   key={name}
-                  className={`font-normal border ${location.pathname == "/" + path ? "border-theme-blue dark:border-theme-off-white" : "border-transparent"} content-center mr-3 px-1 dark:hover:text-theme-blue dark:hover:bg-theme-off-white hover:border-theme-blue hover:bg-theme-blue hover:text-theme-off-white transition duration-200`}
+                  className={`font-normal border ${location.pathname == "/" + path ? "border-theme-blue dark:border-theme-off-white" : "border-transparent"} content-center mr-3 px-1 dark:hover:text-theme-blue dark:hover:bg-theme-off-white hover:border-theme-blue hover:bg-theme-blue hover:text-theme-off-white transition duration-200 select-none`}
                 >
                   <Link key={name} to={link}>
                     {name}
